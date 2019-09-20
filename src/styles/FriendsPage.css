@@ -2,7 +2,7 @@
 	margin: 55px;
 }
 
-.tabs {
+.taabs {
 	margin: auto;
 	width: 50%;
 	border: 3px solid black;
@@ -29,4 +29,8 @@ button {
 	font-size: 26px;
 	margin: 10px;
 	border-radius: 18px;
+}
+
+body{
+	text-align: center;
 }
