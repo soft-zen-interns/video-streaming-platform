@@ -3,6 +3,8 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import '../styles/FriendsPage.css';
 import Modal from 'react-modal';
+import FBLogo from '../imgs/Facebook.png';
+import GoogleLogo from '../imgs/Google.png';
 
 const customStyles = {
 	content : {
@@ -55,6 +57,7 @@ class FriendsPage extends React.Component {
 					onRequestClose={this.closeModal}
 					style={customStyles}
 					//contentLabel="Example Modal"
+					id = "modal"
 				>
 					<Tabs className="tabs">
 						<TabList>
@@ -68,21 +71,23 @@ class FriendsPage extends React.Component {
 						</TabPanel>
 
 						<TabPanel>
-							<h2>
-								<div className="intro">
-									<span>Username, now let's get you connected with friends.</span>
+							<h2 id="content">
+								<div id="intro">
+									<span className="text">Username, now let's get you connected with friends.</span>
 								</div>
 								<div className="subIntro">
-									<span>Find your friends.</span>
+									<span className="text">Find your friends.</span>
+								</div>
+
+								<div>
+									<button><img src={GoogleLogo} alt="google.png" className = "photo"></img><span className="btnText">GOOGLE CONTACTS</span></button>
 								</div>
 								<div>
-									<button>google contacts</button>
+									<button><img src={FBLogo} alt="facebook.png" className = "photo"></img><span className="btnText">FACEBOOK FRIENDS</span></button>
 								</div>
 								<div>
-									<button>facebook contacts</button>
-								</div>
-								<div>
-									<button className="skip">skip this step</button>
+									<hr></hr>
+									<button id="skip"> <span className="text">Skip this step</span></button>
 								</div>
 							</h2>
 						</TabPanel>

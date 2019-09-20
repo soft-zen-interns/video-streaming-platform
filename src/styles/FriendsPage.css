@@ -1,6 +1,7 @@
-.intro {
+#intro {
 	margin: 55px;
 	color: #474747;
+	font-weight: 700;
 }
 
 .taabs {
@@ -15,21 +16,36 @@
 	font-size: 20px;
 }
 
-.skip {
+#skip {
 	color: #474747;
 	background: white;
-	font-size: 26px;
-	margin-top: 50px;
-	margin-bottom: 2px;
+	font-size: 17px;
+	margin-bottom: 0;
 	border: none;
+	margin-top: 0;
 }
 
+hr{
+	margin-bottom: 8px;
+	margin-top: 50px;
+	border-top: 1px #E7E7E9;
+}
+
+.btnText{
+	font-size: 75%;
+}
+
+#content{
+	margin-bottom: 0px;
+}
 button {
 	background: #171522;
 	color: whitesmoke;
 	font-size: 26px;
 	margin: 10px;
 	border-radius: 18px;
+	width: 80%;
+	height: 40px;
 }
 
 body{
@@ -50,4 +66,15 @@ body{
 
 p{
 	display: inline-block;
+}
+
+.text{
+	font-family: "Courier New", "sans-serif";
+	font-weight: 500;
+}
+
+.photo{
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
 }
