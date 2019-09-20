@@ -57,9 +57,9 @@ class FriendsPage extends React.Component {
 				>
 					<Tabs className="tabs">
 						<TabList>
-							<Tab>PROFILE INFO</Tab>
-							<Tab>FRIENDS</Tab>
-							<Tab>ADD VIDEO</Tab>
+							<Tab> <span className="dot">1</span> <p> PROFILE INFO</p></Tab>
+							<Tab> <span className="dot">2</span> <p>FRIENDS</p></Tab>
+							<Tab> <span className="dot">3</span> <p>ADD VIDEO</p></Tab>
 						</TabList>
 
 						<TabPanel>
