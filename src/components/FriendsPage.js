@@ -16,6 +16,7 @@ const customStyles = {
 	}
 };
 
+
 Modal.setAppElement('#root');
 
 class FriendsPage extends React.Component {

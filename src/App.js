@@ -3,6 +3,7 @@ import React from 'react';
 import FriendsPage from './components/FriendsPage';
 // import LandingPage from './components/LandingPage';
 // import SignUpPage from './components/SignUpPage';
+import '../src/styles/App.css';
 
 function App() {
 	return (
