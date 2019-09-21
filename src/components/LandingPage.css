@@ -1,0 +1,172 @@
+body{
+    background-color: rgb(23,21 ,35);
+}
+
+.buttonSubscribe {
+    margin-right: 10px;
+    margin-left:10px;
+    /*margin-top: 30px;*/
+	background-color: #2f352c;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+    border-radius:42px;
+    border:1px #2f352c;
+	display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:15px;
+	padding:10px 30px;
+    text-decoration:none;
+    position:absolute;
+    top: 30px;
+    right: 20px;
+}
+.buttonSubscribe:hover {
+    background-color:#2f352c;
+}
+.buttonSubscribe:active {
+	position:absolute;
+    top: 30px;
+    right: 20px;
+}
+
+.buttonLogin {
+    margin-left: 10px;
+    margin-top: 10px;
+	background-color:rgb(23,21 ,35);
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px rgb(23,21 ,35);
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:20px;
+	font-weight:bold;
+	padding:8px 15px;
+    text-decoration:none;
+    position:absolute;
+    top: 20px;
+    right: 180px;
+}
+.buttonLogin:hover {
+	background-color:rgb(23,21 ,35);
+}
+.buttonLogin:active {
+    position:absolute;
+    top: 20px;
+    right: 180px;
+}
+
+.buttonSignUp {
+    margin-left: 10px;
+    margin-top: 10px;
+	background-color:rgb(23,21 ,35);
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+    border:1px;
+    border-left-width: 1px;
+    border-left-color: white;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:20px;
+	font-weight:bold;
+	padding:8px 15px;
+    text-decoration:none;
+    position:absolute;
+    top: 20px;
+    right: 280px;
+}
+.buttonSignUp:hover {
+	background-color:rgb(23,21 ,35);
+}
+.buttonSignUp:active {
+	position:relative;
+    top:1px;
+    position:absolute;
+    top: 20px;
+    right: 280px;
+}
+
+.hOneVideosForFree{
+    color: white;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    letter-spacing: 3px;
+    line-height: 20px;
+    position:absolute;
+    top: 200px;
+    text-align: center;
+    left:350px;
+}
+
+.buttonSignUpForFree {
+	background-color: light grey;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px rgb(23,21 ,35);
+	display:inline-block;
+	cursor:pointer;
+    color:rgb(23,21 ,35);
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:19px 90px;
+    text-decoration:none;
+    position:absolute;
+    top: 330px;
+    left:500px;
+}
+.buttonSignUpForFree:hover {
+	background-color:#a4b89a;
+}
+.buttonSignUpForFree:active {
+    position:absolute;
+    top: 330px;
+    left:500px;
+}
+
+.alreadyHaveAnAccount{
+    text-align: center;
+    color: white;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    letter-spacing: 2px;
+    position:absolute;
+    top: 400px;
+    left:530px;
+}
+
+.logInIfYouHaveAnAccount{
+    margin-top: 30px;
+	background-color:rgb(23,21 ,35);
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px rgb(23,21 ,35);
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:18px;
+	font-weight:bold;
+	padding:8px 15px;
+    text-decoration:none;
+    position:absolute;
+    top: 376px;
+    left:760px;
+}
+
+.logInIfYouHaveAnAccount:active {
+    position:absolute;
+    top: 376px;
+    left:760px;
+}
