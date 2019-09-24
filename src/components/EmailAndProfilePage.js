@@ -22,18 +22,25 @@ class EmailAndProfilePage extends React.Component {
 			<div>
 				<button 
 					onClick = {this.openModal}
-					className = "sign-up"
+					className = "button-layout sign-up-btn"
 				>Sign Up</button>
 				<Modal
 					isOpen = {this.state.modalIsOpened}
 					contentLabel = "Confirmation Email and Profile Modal"
 					overlayClassName = "overlay"
-					className = "modal"
+					className = "main-styles modal"
 				>
-				<h1>Hello you opened me!</h1>
-				<button>tab</button>
-				<button>is</button>
-				<button>here</button>
+				<h4 className="heading-text">
+					CONFIRM EMAIL ADDRESS <br/> TO COMPLETE YOUR PROFILE
+				</h4>
+				<button
+					//onClick = {}
+					className = "button-layout confirm-btn" 
+				>CONFIRM</button>
+				<p className="bottom-text">
+					In case you didn't recieve your email, we can try to 
+					<b> Resend It To You</b>
+				</p>
 				</Modal>
 			</div>
 		);

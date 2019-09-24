@@ -1,25 +1,51 @@
-.sign-up {
-    background-color: white;
-    color: dimgray;
-
-    /* font-family: 'Courier New', Courier, monospace;  */
+.button-layout {
+    width: 210px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     font-weight: bold;
     border: none;
     border-radius: 50px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    width: 250px;
+}
+
+.sign-up-btn {
+    background-color: white;
+    color: dimgray;
+    /* font-family: 'Courier New', Courier, monospace;  */
+}
+
+.confirm-btn {    
+    font-size: 9px;
+    background-color: #171523;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main-styles {
+    background-color: white;
+    color: #171523;
+    text-align: center;
+}
+
+.heading-text{
+    font-size: 12px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+.bottom-text {
+    color: dimgray;
+    font-size: 8px;
 }
 
 .modal {
     position: absolute;
-    top: 40px;
-    left: 40px;
-    right: 40px;
-    bottom: 40px;
-    max-width: 400px;
-    max-height: 300px;
-    background-color: white;
+    top: 33%;
+    left: 34%;
+    right: 100px;
+    bottom: 100px; 
+    max-width: 320px;
+    max-height: 250px; 
 }
 
 .modal:focus {
