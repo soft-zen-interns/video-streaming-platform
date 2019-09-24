@@ -1,5 +1,6 @@
 import React from 'react';
 import Modal from 'react-modal';
+import ReactCodeInput from 'react-verification-code-input';
 import '../styles/EmailAndProfilePage.css';
 
 Modal.setAppElement("#root");
@@ -33,6 +34,13 @@ class EmailAndProfilePage extends React.Component {
 				<h4 className="heading-text">
 					CONFIRM EMAIL ADDRESS <br/> TO COMPLETE YOUR PROFILE
 				</h4>
+				<ReactCodeInput 
+					type = "text"
+					fields = {6}
+					fieldWidth = {20}
+					fieldHeight = {20}
+					className = "code-confirm"
+				/>
 				<button
 					//onClick = {}
 					className = "button-layout confirm-btn" 
