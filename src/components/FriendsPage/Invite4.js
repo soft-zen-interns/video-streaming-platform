@@ -58,9 +58,9 @@ class Invite1 extends React.Component {
 				>
 					<Tabs>
 						<TabList>
-							<Tab> <span className="dot">1</span> <p> PROFILE INFO</p></Tab>
-							<Tab> <span className="dot">2</span> <p>FRIENDS</p></Tab>
-							<Tab> <span className="dot">3</span> <p>ADD VIDEO</p></Tab>
+							<Tab> <span className="dot">1</span> <p className="tabNames"> PROFILE INFO</p></Tab>
+							<Tab> <span className="dot">2</span> <p className="tabNames">FRIENDS</p></Tab>
+							<Tab> <span className="dot">3</span> <p className="tabNames">ADD VIDEO</p></Tab>
 						</TabList>
 
 						<TabPanel>
@@ -78,11 +78,34 @@ class Invite1 extends React.Component {
 
 								<div id="contactsSection">
 									<div id="sp1">
-										<p>a</p>
+										<p>TO DO...</p>
+										<p>TO DO...</p>
+										<p>TO DO...</p>
+										<p>TO DO...</p>
+										<p>TO DO...</p>
+										<p>TO DO...</p>
+										<p>TO DO...</p>
+										<p>TO DO...</p>
+										<p>TO DO...</p>
+										<p>TO DO...</p>
+										<p>TO DO...</p>
+										<p>TO DO...</p>
 									</div>
-									<div id="sp2">
+									<div id="sp2" className="text">
 										<p><b>From:</b> youremail@gmail.com</p>
 										<p><b>Subject:</b> You are invited to VMP by Username!</p>
+										<div id="mailPreview">
+											<p>Hi Account Name</p>
+											<textarea rows="4" className="text">
+											Join me in sharing and discovering music videos on Video Music Platform!
+											</textarea>
+											<p>www.vmp.com/blablabla</p>
+											<p>- Profile Name</p>
+										</div>
+										<div id="btn">
+											<button><span className="btnText">SEND 2 INVITES</span></button>
+										</div>
+
 									</div>
 								</div>
 							</h2>
