@@ -1,6 +1,6 @@
 import React from 'react';
 // import EmailAndProfilePage from './components/EmailAndProfilePage';
-import FriendsPage from './components/FriendsPage';
+import Invite1 from './components/FriendsPage/Invite4';
 // import LandingPage from './components/LandingPage';
 // import SignUpPage from './components/SignUpPage';
 import '../src/styles/App.css';
@@ -9,7 +9,7 @@ function App() {
 	return (
 		<div className="App">
 			{/* <EmailAndProfilePage /> */}
-			<FriendsPage />
+			<Invite1 />
 			{/* <LandingPage />
 			<SignUpPage /> */}
 		</div>

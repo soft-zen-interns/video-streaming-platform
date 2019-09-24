@@ -1,10 +1,11 @@
 import React from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import '../styles/FriendsPage.css';
+import '../../styles/FriendsPage/Invite1.css';
 import Modal from 'react-modal';
-import FBLogo from '../imgs/Facebook.png';
-import GoogleLogo from '../imgs/Google.png';
+import FBLogo from '../../imgs/Facebook.png';
+import GoogleLogo from '../../imgs/Google.png';
+import Invite4 from '../FriendsPage/Invite4';
 
 const customStyles = {
 	content : {
@@ -12,7 +13,6 @@ const customStyles = {
 		left                  : '50%',
 		right                 : 'auto',
 		bottom                : 'auto',
-		//marginRight           : '-50%',
 		transform             : 'translate(-50%, -50%)'
 
 	}
@@ -21,7 +21,7 @@ const customStyles = {
 
 Modal.setAppElement('#root');
 
-class FriendsPage extends React.Component {
+class Invite1 extends React.Component {
 	constructor() {
 		super();
 
@@ -48,6 +48,13 @@ class FriendsPage extends React.Component {
 	}
 
 	render() {
+
+		function NextPage() {
+			return (
+				<Invite4/>
+			);
+		}
+
 		return (
 			<div>
 				<button onClick={this.openModal}>SIGN UP</button>
@@ -56,10 +63,8 @@ class FriendsPage extends React.Component {
 					onAfterOpen={this.afterOpenModal}
 					onRequestClose={this.closeModal}
 					style={customStyles}
-					//contentLabel="Example Modal"
-					id = "modal"
 				>
-					<Tabs className="tabs">
+					<Tabs>
 						<TabList>
 							<Tab> <span className="dot">1</span> <p> PROFILE INFO</p></Tab>
 							<Tab> <span className="dot">2</span> <p>FRIENDS</p></Tab>
@@ -73,17 +78,17 @@ class FriendsPage extends React.Component {
 						<TabPanel>
 							<h2 id="content">
 								<div id="intro">
-									<span className="text">Username, now let's get you connected with friends.</span>
+									<span className="text">USERNAME, NOW LET'S GET YOU CONNECTED WITH FRIENDS.</span>
 								</div>
-								<div className="subIntro">
+								<div id="subIntro">
 									<span className="text">Find your friends.</span>
 								</div>
 
 								<div>
-									<button><img src={GoogleLogo} alt="google.png" className = "photo"></img><span className="btnText">GOOGLE CONTACTS</span></button>
+									<button onClick={NextPage}><img src={GoogleLogo} alt="google.png" className = "image"></img><span className="btnText">GOOGLE CONTACTS</span></button>
 								</div>
 								<div>
-									<button><img src={FBLogo} alt="facebook.png" className = "photo"></img><span className="btnText">FACEBOOK FRIENDS</span></button>
+									<button><img src={FBLogo} alt="facebook.png" className = "image"></img><span className="btnText">FACEBOOK FRIENDS</span></button>
 								</div>
 								<div>
 									<hr></hr>
@@ -102,4 +107,4 @@ class FriendsPage extends React.Component {
 	}
 }
 
-export default FriendsPage;
+export default Invite1;
