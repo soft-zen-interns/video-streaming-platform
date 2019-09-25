@@ -13,6 +13,7 @@
 .text{
 	font-family: "Courier New", "sans-serif";
 	font-weight: 500;
+	color: #4C4C4C;
 
 }
 
@@ -58,10 +59,10 @@ input[type=text], select {
 
 #sp1{
 	height: 100%;
-	width: 40%;
+	width: 35%;
 	display: inline-block;
-	background-color: blue;
 	float: left;
+	margin-left: 40px;
 }
 
 #sp2{
@@ -85,9 +86,7 @@ textarea{
 }
 
 hr{
-	margin-bottom: 8px;
-	margin-top: 50px;
-	border-top: 1px #E7E7E9;
+	border: 1px solid #ECECEC;
 }
 
 button {
@@ -107,5 +106,26 @@ body{
 
 .tabNames{
 	display: inline-block;
+}
+
+.container{
+	width: 100%;
+	height: 15%;
+}
+
+.check{
+	display: inline-block;
+	float: left;
+	height: 100%;
+	width: 10%;
+	line-height: 55px;
+}
+
+.checkText{
+	display: inline-block;
+	float: right;
+	height: 100%;
+	width: 80%;
+	text-align: left;
 }
 

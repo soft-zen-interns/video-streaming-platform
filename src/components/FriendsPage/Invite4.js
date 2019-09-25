@@ -73,23 +73,61 @@ class Invite1 extends React.Component {
 									<span className="text">INVITE YOUR EMAIL CONTACTS</span>
 								</div>
 								<div>
-									<input id="inputBox" type="text" placeholder="Search 35 contacts"></input>
+									<input id="inputBox" type="text" placeholder="Search 35 contacts"/>
 								</div>
 
 								<div id="contactsSection">
 									<div id="sp1">
-										<p>TO DO...</p>
-										<p>TO DO...</p>
-										<p>TO DO...</p>
-										<p>TO DO...</p>
-										<p>TO DO...</p>
-										<p>TO DO...</p>
-										<p>TO DO...</p>
-										<p>TO DO...</p>
-										<p>TO DO...</p>
-										<p>TO DO...</p>
-										<p>TO DO...</p>
-										<p>TO DO...</p>
+										<div className="container">
+											<div className="check">
+												<input type="checkbox" value="None" id="roundedOne" name="check"/>
+											</div>
+											<div className="checkText">
+												<label className="text">Account Name</label>
+												<p className="text">sample.mail@gmail.com</p>
+											</div>
+										</div>
+										<hr/>
+										<div className="container">
+											<div className="check">
+												<input type="checkbox" value="None" id="roundedOne" name="check"/>
+											</div>
+											<div className="checkText">
+												<label className="text">Account Name</label>
+												<p className="text">sample.mail@gmail.com</p>
+											</div>
+										</div>
+										<hr/>
+										<div className="container">
+											<div className="check">
+												<input type="checkbox" value="None" id="roundedOne" name="check"/>
+											</div>
+											<div className="checkText">
+												<label className="text">Account Name</label>
+												<p className="text">sample.mail@gmail.com</p>
+											</div>
+										</div>
+										<hr/>
+										<div className="container">
+											<div className="check">
+												<input type="checkbox" value="None" id="roundedOne" name="check"/>
+											</div>
+											<div className="checkText">
+												<label className="text">Account Name</label>
+												<p className="text">sample.mail@gmail.com</p>
+											</div>
+										</div>
+										<hr/>
+										<div className="container">
+											<div className="check">
+												<input type="checkbox" value="None" id="roundedOne" name="check"/>
+											</div>
+											<div className="checkText">
+												<label className="text">Account Name</label>
+												<p className="text">sample.mail@gmail.com</p>
+											</div>
+										</div>
+										<hr/>
 									</div>
 									<div id="sp2" className="text">
 										<p><b>From:</b> youremail@gmail.com</p>
