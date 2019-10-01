@@ -1,5 +1,7 @@
 import React from 'react';
 import "./LandingPage.css"
+import Genres from "./Genres.js"
+import "./Genres.css"
 
 const LandingPage = () => {
 	return(
@@ -12,6 +14,8 @@ const LandingPage = () => {
 			<button className = "buttonSignUpForFree">SIGN UP FOR FREE</button>
 			<h3 className = "alreadyHaveAnAccount">Already have an account?</h3>
 			<button className = "logInIfYouHaveAnAccount">Log in</button>
+			<Genres/>
+			<h5>TRYINGGGGGGGGGG</h5>
 		</div>
 	);
 };
