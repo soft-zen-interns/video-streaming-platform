@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2728732a-9dfe-408e-a0fd-12cd21376048" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/FriendsPage/Invite5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/FriendsPage/Invite8.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imgs/FacebookGreypng.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imgs/GoogleGreypng.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/FriendsPage/Invite5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/FriendsPage/Invite8.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FriendsPage/Invite4.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FriendsPage/Invite4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/FriendsPage/Invite4.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/FriendsPage/Invite4.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +34,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/styles/FriendsPage" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -46,6 +51,10 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/imgs" />
       <recent name="$PROJECT_DIR$/src/components" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/styles/FriendsPage" />
+      <recent name="$PROJECT_DIR$/src/components/FriendsPage" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -76,7 +85,8 @@
       <workItem from="1568962078183" duration="3956000" />
       <workItem from="1568979879466" duration="4977000" />
       <workItem from="1569057513800" duration="586000" />
-      <workItem from="1569353989511" duration="6747000" />
+      <workItem from="1569353989511" duration="11838000" />
+      <workItem from="1569935445992" duration="1025000" />
     </task>
     <servers />
   </component>
