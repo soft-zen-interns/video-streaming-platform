@@ -2,6 +2,7 @@ import React from 'react';
 import Modal from 'react-modal';
 import ReactCodeInput from 'react-verification-code-input';
 import '../styles/EmailAndProfilePage.css';
+import verifyIcon from '../images/verify-symbol.png';
 
 Modal.setAppElement("#root");
 
@@ -9,46 +10,91 @@ class EmailAndProfilePage extends React.Component {
 	constructor() {
 		super();
 
-		this.state = {modalIsOpened: false};
+		this.state = {
+			confirmCodeModalIsOpened: false,
+			verifiedModalIsOpened: false
+		};
 		
-		this.openModal = this.openModal.bind(this);
+		this.openConfirmCodeModal = this.openConfirmCodeModal.bind(this);
+		this.closeConfirmCodeModal = this.closeConfirmCodeModal.bind(this);
+		this.openVerifiedModal = this.openVerifiedModal.bind(this);
+		this.closeVerifiedModal = this.closeVerifiedModal.bind(this);
 	}
 
-	openModal() {
-		this.setState({modalIsOpened: true});
+	openConfirmCodeModal() {
+		this.setState({confirmCodeModalIsOpened: true});
+	}
+
+	openVerifiedModal() {
+		this.setState({verifiedModalIsOpened: true});
+	}
+
+	closeConfirmCodeModal() {
+		this.setState({confirmCodeModalIsOpened: false});
+		this.openVerifiedModal();
+	}
+
+	closeVerifiedModal() {
+		this.setState({verifiedModalIsOpened: false});
 	}
 
 	render() {
 		return (
 			<div>
 				<button 
-					onClick = {this.openModal}
+					onClick = {this.openConfirmCodeModal}
 					className = "button-layout sign-up-btn"
 				>Sign Up</button>
 				<Modal
-					isOpen = {this.state.modalIsOpened}
+					isOpen = {this.state.confirmCodeModalIsOpened}
 					contentLabel = "Confirmation Email and Profile Modal"
 					overlayClassName = "overlay"
 					className = "main-styles modal"
 				>
-				<h4 className="heading-text">
-					CONFIRM EMAIL ADDRESS <br/> TO COMPLETE YOUR PROFILE
-				</h4>
-				<ReactCodeInput 
-					type = "text"
-					fields = {6}
-					fieldWidth = {20}
-					fieldHeight = {20}
-					className = "code-confirm"
-				/>
-				<button
-					//onClick = {}
-					className = "button-layout confirm-btn" 
-				>CONFIRM</button>
-				<p className="bottom-text">
-					In case you didn't recieve your email, we can try to 
-					<b> Resend It To You</b>
-				</p>
+				<div className="modal-part-box">
+					<h4 style={{ paddingTop: "30px"}} className="heading-text">
+						CONFIRM EMAIL ADDRESS <br/> TO COMPLETE YOUR PROFILE
+					</h4>
+					<ReactCodeInput 
+						type = "text"
+						fields = {6}
+						fieldWidth = {20}
+						fieldHeight = {20}
+						className = "code-confirm"
+					/>
+				</div>
+				<div className="modal-part-box">
+					<button
+						onClick = {this.closeConfirmCodeModal}
+						className = "button-layout confirm-btn" 
+					>CONFIRM</button>
+					<p className="bottom-text">
+						In case you didn't recieve your email, we can try to 
+						<a href="#"><b> Resend It To You</b></a>
+					</p>
+				</div>
+				</Modal>
+				<Modal
+				isOpen = {this.state.verifiedModalIsOpened}
+				contentLabel = "Your account is confirmed"
+				overlayClassName = "overlay"
+				className = "main-styles modal"
+				>
+				<div className="modal-part-box">
+					<img src={verifyIcon} alt="Verify Icon"/>
+					<h4 style={{ paddingTop: "10px"}} className="heading-text">
+						YOUR ACCOUNT IS CONFIRMED!
+					</h4>
+				</div>
+				<div className="modal-part-box">
+					<button
+						onClick = {this.closeVerifiedModal}
+						className = "button-layout confirm-btn" 
+					>CONTINUE</button>
+					<p className="bottom-text">
+						Use full-name@gmail.com for Log In 
+					</p>
+				</div>
 				</Modal>
 			</div>
 		);
