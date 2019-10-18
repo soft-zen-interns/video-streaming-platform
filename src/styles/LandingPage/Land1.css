@@ -1,0 +1,42 @@
+#signUpBtn{
+    background-color: white;
+    color: black;
+    width: 30%;
+}
+
+#signUpTxt{
+    font-size: 20px;
+}
+
+#subscribeBtn{
+    background-color: #525252;
+    color: white;
+    height: 70%;
+    width:50%;
+    margin-top: 10px;
+    vertical-align: middle;
+}
+
+#subscribeTxt{
+    font-size: 10px;
+}
+
+#sbsButton{
+    float: right;
+    width: 20%;
+}
+
+.firstSection{
+    background-color: #181424;
+}
+
+#header{
+    height: 40px;
+}
+
+#text{
+    color:white;
+    font-size: 30px;
+    width: 50%;
+    margin:auto;
+}
