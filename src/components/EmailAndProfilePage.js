@@ -2,7 +2,10 @@ import React from 'react';
 import Modal from 'react-modal';
 import ReactCodeInput from 'react-verification-code-input';
 import '../styles/EmailAndProfilePage.css';
+import '../styles/overriten-styles-for-input-verif-code.css';
 import verifyIcon from '../images/verify-symbol.png';
+
+import Button from 'react-bootstrap/Button';
 
 Modal.setAppElement("#root");
 
@@ -12,13 +15,15 @@ class EmailAndProfilePage extends React.Component {
 
 		this.state = {
 			confirmCodeModalIsOpened: false,
-			verifiedModalIsOpened: false
+			verifiedModalIsOpened: false,
+			disabledButton: true
 		};
 		
 		this.openConfirmCodeModal = this.openConfirmCodeModal.bind(this);
 		this.closeConfirmCodeModal = this.closeConfirmCodeModal.bind(this);
 		this.openVerifiedModal = this.openVerifiedModal.bind(this);
 		this.closeVerifiedModal = this.closeVerifiedModal.bind(this);
+		this.enableConfirmButton = this.enableConfirmButton.bind(this);
 	}
 
 	openConfirmCodeModal() {
@@ -36,6 +41,10 @@ class EmailAndProfilePage extends React.Component {
 
 	closeVerifiedModal() {
 		this.setState({verifiedModalIsOpened: false});
+	}
+
+	enableConfirmButton() {
+		this.setState({disabledButton: false});
 	}
 
 	render() {
@@ -56,17 +65,19 @@ class EmailAndProfilePage extends React.Component {
 						CONFIRM EMAIL ADDRESS <br/> TO COMPLETE YOUR PROFILE
 					</h4>
 					<ReactCodeInput 
-						type = "text"
 						fields = {6}
-						fieldWidth = {20}
-						fieldHeight = {20}
-						className = "code-confirm"
+						filedsWidth = {10}
+						autoFocus = {true}
+						className = "verif-code"
+						//onConplete = {this.enableConfirmButton}
 					/>
 				</div>
 				<div className="modal-part-box">
 					<button
+						id="lock"
 						onClick = {this.closeConfirmCodeModal}
-						className = "button-layout confirm-btn" 
+						className = "button-layout confirm-btn"
+						//disabled = {this.state.disabledButton}
 					>CONFIRM</button>
 					<p className="bottom-text">
 						In case you didn't recieve your email, we can try to 
