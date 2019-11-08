@@ -7,7 +7,7 @@ var mysql = require('mysql');
 var connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'rootroot',
+    password: 'admin',
     database: 'softzen'
 });
 
@@ -21,8 +21,9 @@ app.get('/all-genres', function (req,res) {
     connection.connect();
     connection.query("SELECT * FROM genres ORDER BY id ASC", function (err, result) {
         if (err) {
+			res.send(err.message);
             console.log("Database error!");
-            res.send("Database error!")
+            //res.send("Database error!")
         }
         else {
             console.log(result);
