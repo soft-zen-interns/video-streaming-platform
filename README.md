@@ -26,6 +26,8 @@
             http://localhost:8000/genres/create-genre/rap
             http://localhost:8000/genres/create-genre/jazz
             http://localhost:8000/genres/create-genre/bluse
+            
+            
 
 ## Available SERVER Scripts
 All custom server scripts will be listed here:
