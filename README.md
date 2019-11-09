@@ -1,4 +1,54 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#VIDEO STREAMING PLATFORM
+
+## Server routes
+- [http://localhost:8000](http://localhost:8000)
+
+    - Index page
+
+        - Can't really do anything here
+
+- [http://localhost:8000/genres](http://localhost:8000/genres)
+
+    - Genres route
+    
+        - From here you can manipulate the music genres in the databas
+
+    - [http://localhost:8000/genres/all-genres](http://localhost:8000/all-genres)
+        
+        - Get a JSON with all the genres from the database
+
+    - [http://localhost:8000/genres/create-genre/](http://localhost:8000/genres/create-genre/)
+        
+        - The name you write after the last '/' will be added to the database, if it doesn't exists. Like:
+        
+        
+            http://localhost:8000/genres/create-genre/hip-hop
+            http://localhost:8000/genres/create-genre/rap
+            http://localhost:8000/genres/create-genre/jazz
+            http://localhost:8000/genres/create-genre/bluse
+
+## Available SERVER Scripts
+All custom server scripts will be listed here:
+
+### `npm run server`
+This command will start the server locally on port 8000. 
+[http://localhost:8000](http://localhost:8000)
+
+
+### `npm run dbMigrate`
+This command will migrate the available MySQL tables on your local MySQL server in database 'softzen'.
+The existence of database called 'softzen' is necessary! 
+
+######// To create and use the database 'softzen' run the following commands.
+
+`mysql> CREATE DATABASE softzen`
+
+`mysql> USE softzen`
+
+
+
+
+
 
 ## Available Scripts
 
