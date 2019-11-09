@@ -22,7 +22,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "server": "nodemon Server/Routes/genres.js",
+    "server": "nodemon Server/server.js",
     "dbMigrate": "cd Server/DatabaseConfig && sequelize db:migrate"
   },
   "eslintConfig": {
