@@ -4,19 +4,17 @@ import {Container, Row, Col} from "react-bootstrap";
 import "../../styles/GenresSection/GenresSection.css";
 import GenreBox from "./GenresBox";
 
-const API_URL = "https://localhost:8000";
-
 class GenresSection extends React.Component {
 	state = {
     genres: []
   }
 
 	componentDidMount() {
-	  const url = `${API_URL}/all-genres/`;
+	  const url = "http://jsonplaceholder.typicode.com/users/";
 	  axios.get(url).then(response => response.data).then(data => {
 			this.setState({genres: data})
 			console.log(this.state.genres)
-		});
+		}).catch((err) => {console.log(err)});
   }
 
 	render() {

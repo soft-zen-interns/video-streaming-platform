@@ -23,7 +23,6 @@ app.get('/all-genres', function (req,res) {
         if (err) {
 			res.send(err.message);
             console.log("Database error!");
-            //res.send("Database error!")
         }
         else {
             console.log(result);
