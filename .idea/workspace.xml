@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2728732a-9dfe-408e-a0fd-12cd21376048" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Routes/genres.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Routes/genres.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GenresSection/GneresSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GenresSection/GneresSection.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +46,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -70,7 +72,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.GneresSection.js">
+    <configuration name="GneresSection.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="GneresSection.js" working-dir="$PROJECT_DIR$/src/components/GenresSection">
+      <method v="2" />
+    </configuration>
     <configuration name="server" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -107,7 +112,7 @@
       <workItem from="1569935445992" duration="1920000" />
       <workItem from="1571140600613" duration="5008000" />
       <workItem from="1572001770121" duration="1097000" />
-      <workItem from="1573305992624" duration="9441000" />
+      <workItem from="1573305992624" duration="11526000" />
     </task>
     <task id="LOCAL-00001" summary="Add genre from URL">
       <created>1573331493127</created>
@@ -130,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573337064663</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update README file with some server documentation">
+      <created>1573339006013</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573339006013</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +178,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add genre from URL" />
     <MESSAGE value="Server structure update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Server structure update" />
+    <MESSAGE value="Update README file with some server documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update README file with some server documentation" />
   </component>
 </project>

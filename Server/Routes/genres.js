@@ -2,7 +2,7 @@ const mysql = require('mysql');
 const Sequelize = require('sequelize');
 const router = require('express').Router();
 
-const connection = mysql.createConnection({
+const connection = mysql.createPool({
     host: 'localhost',
     user: 'root',
     password: 'rootroot',
@@ -25,22 +25,39 @@ const genres = sequelize.define('genre', {
 
 router.get('/',function (req, res) {
     console.log("Index page loaded.");
-    res.send("GO TO \"localhost:8000/genres/all-genres\" TO GET THE GENRES!");
+    res.send("GO TO \"localhost:8000/genres/all-genres\" TO GET THE GENRES! " +
+        "OR " +
+        "GO TO \"localhost:8000/genres/create-genre/\" + 'genre name' TO CREATE GENRE!");
 });
 
 
 router.get('/all-genres', function (req,res) {
-    connection.connect();
-    connection.query("SELECT * FROM genres ORDER BY id ASC", function (err, result) {
-        if (err) {
-			res.send(err.message);
-            console.log("Database error!");
-        }
-        else {
-            console.log(result);
-            res.send(result);
-        }
+
+    connection.getConnection(function (err, connection) {
+        connection.query("SELECT * FROM genres ORDER BY id ASC", function (err, result) {
+            if (err) {
+                res.send(err.message);
+                console.log("Database error!");
+            }
+            else {
+                console.log(result);
+                res.send(result);
+            }
+        });
     });
+
+
+    // connection.connect();
+    // connection.query("SELECT * FROM genres ORDER BY id ASC", function (err, result) {
+    //     if (err) {
+	// 		res.send(err.message);
+    //         console.log("Database error!");
+    //     }
+    //     else {
+    //         console.log(result);
+    //         res.send(result);
+    //     }
+    // });
 });
 
 router.get('/create-genre/:genreName', function (req, res) {

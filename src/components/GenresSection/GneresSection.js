@@ -10,7 +10,7 @@ class GenresSection extends React.Component {
   }
 
 	componentDidMount() {
-	  const url = "http://jsonplaceholder.typicode.com/users/";
+	  const url = "http://localhost:8000/genres/all-genres";
 	  axios.get(url).then(response => response.data).then(data => {
 			this.setState({genres: data})
 			console.log(this.state.genres)
@@ -25,6 +25,7 @@ class GenresSection extends React.Component {
 					<Col md="auto" className="genres-section">
 						<Container>
 							<Row>
+
 								{/* {this.state.genres.map((genre) => (
 									<GenreBox title={genre.title}/>
 								))} */}
