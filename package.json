@@ -22,7 +22,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "server": "nodemon Server/Routes/genres.js",
+    "dbMigrate": "cd Server/DatabaseConfig && sequelize db:migrate"
   },
   "eslintConfig": {
     "extends": "react-app"

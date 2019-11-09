@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2728732a-9dfe-408e-a0fd-12cd21376048" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Server/DatabaseConfig/insertRecort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/DatabaseConfig/migrations/20191108132151-create-accounts.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/DatabaseConfig/migrations/20191108132151-create-accounts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/APIGenres/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Routes/genres.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/DatabaseConfig/insertRecort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/DatabaseConfig/migrations/20191108132151-create-accounts.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/DatabaseConfig/migrations/20191108132636-create-genres.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/DatabaseConfig/migrations/20191108132636-create-genres.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,14 +49,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/styles/FriendsPage" />
-      <recent name="$PROJECT_DIR$/src/components/FriendsPage" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Server/Routes" />
       <recent name="$PROJECT_DIR$/src/imgs" />
       <recent name="$PROJECT_DIR$/src/components/LandingPage" />
       <recent name="$PROJECT_DIR$/src/components" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/styles/FriendsPage" />
+      <recent name="$PROJECT_DIR$/src/components/FriendsPage" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -88,8 +92,16 @@
       <workItem from="1569935445992" duration="1920000" />
       <workItem from="1571140600613" duration="5008000" />
       <workItem from="1572001770121" duration="1097000" />
-      <workItem from="1573305992624" duration="2362000" />
+      <workItem from="1573305992624" duration="7392000" />
     </task>
+    <task id="LOCAL-00001" summary="Add genre from URL">
+      <created>1573331493127</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1573331493127</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,5 +133,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add genre from URL" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add genre from URL" />
   </component>
 </project>
