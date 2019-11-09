@@ -1,4 +1,4 @@
-#VIDEO STREAMING PLATFORM
+# VIDEO STREAMING PLATFORM
 
 ## Server routes
 - [http://localhost:8000](http://localhost:8000)
