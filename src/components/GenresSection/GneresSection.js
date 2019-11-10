@@ -2,20 +2,20 @@ import React from "react";
 import axios from "axios";
 import {Container, Row, Col} from "react-bootstrap";
 import "../../styles/GenresSection/GenresSection.css";
-import GenreBox from "./GenresBox";
+import GenreRow from "./GenresRow";
 
 class GenresSection extends React.Component {
 	state = {
-    genres: []
-  }
+		genres: []
+	}
 
 	componentDidMount() {
-	  const url = "http://localhost:8000/genres/all-genres";
-	  axios.get(url).then(response => response.data).then(data => {
+		const url = "http://localhost:8000/genres/all-genres";
+		axios.get(url).then(response => response.data).then(data => {
 			this.setState({genres: data})
 			console.log(this.state.genres)
-		}).catch((err) => {console.log(err)});
-  }
+		});
+	}
 
 	render() {
 		return (
@@ -23,14 +23,8 @@ class GenresSection extends React.Component {
 				<Row>
 					<Col></Col>
 					<Col md="auto" className="genres-section">
-						<Container>
-							<Row>
-
-								{/* {this.state.genres.map((genre) => (
-									<GenreBox title={genre.title}/>
-								))} */}
-							</Row>
-						</Container>
+						<h1 className="head-text">BROWSE GENRES</h1>
+						<GenreRow  genres={this.state.genres}/>	
 					</Col>
 					<Col></Col>
 				</Row>

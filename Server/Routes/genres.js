@@ -15,12 +15,12 @@ const sequelize = new Sequelize('softzen', 'root', 'rootroot', {
     dialect: 'mysql'
 });
 
-const genres = sequelize.define('genre', {
+const genres = sequelize.define('genres', {
     id: {
         primaryKey: true,
         type: Sequelize.INTEGER,
     },
-    genre: Sequelize.STRING
+    title: Sequelize.STRING
 });
 
 router.get('/',function (req, res) {
@@ -65,7 +65,7 @@ router.get('/create-genre/:genreName', function (req, res) {
     const genre = data.genreName;
 
     return genres.create({
-        genre: genre
+        title: genre
     }).then(function (genres) {
         if (genres) {
             res.send("Genre record was created -> JSON: " +  JSON.stringify(genres));
@@ -74,5 +74,12 @@ router.get('/create-genre/:genreName', function (req, res) {
         }
     });
 });
+
+// hardcoded genres for testing
+ //genres.create({title: "pop"});
+// genres.create({title: "rock"});
+// genres.create({title: "hip-hop"});
+// genres.create({title: "r&b"});
+// genres.create({title: "country"});
 
 module.exports = router;
