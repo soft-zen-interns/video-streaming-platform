@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2728732a-9dfe-408e-a0fd-12cd21376048" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/boyandonchev.xml" afterDir="false" />
+    <list default="true" id="2728732a-9dfe-408e-a0fd-12cd21376048" name="Default Changelist" comment="/genres inserts initial genre titles in the db">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/Routes/genres.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Routes/genres.js" afterDir="false" />
     </list>
@@ -132,7 +131,7 @@
       <workItem from="1571140600613" duration="5008000" />
       <workItem from="1572001770121" duration="1097000" />
       <workItem from="1573305992624" duration="12669000" />
-      <workItem from="1573406921992" duration="4764000" />
+      <workItem from="1573406921992" duration="5129000" />
     </task>
     <task id="LOCAL-00001" summary="Add genre from URL">
       <created>1573331493127</created>
@@ -169,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573341541647</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="/genres inserts initial genres in the database">
+      <created>1573412242720</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1573412242721</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +213,8 @@
     <MESSAGE value="Server structure update" />
     <MESSAGE value="Update README file with some server documentation" />
     <MESSAGE value="DB connection pool" />
-    <option name="LAST_COMMIT_MESSAGE" value="DB connection pool" />
+    <MESSAGE value="/genres inserts initial genres in the database" />
+    <MESSAGE value="/genres inserts initial genre titles in the db" />
+    <option name="LAST_COMMIT_MESSAGE" value="/genres inserts initial genre titles in the db" />
   </component>
 </project>
