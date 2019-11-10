@@ -76,10 +76,10 @@ router.get('/create-genre/:genreName', function (req, res) {
 });
 
 // hardcoded genres for testing
- //genres.create({title: "pop"});
-// genres.create({title: "rock"});
-// genres.create({title: "hip-hop"});
-// genres.create({title: "r&b"});
-// genres.create({title: "country"});
+genres.create({title: "pop"});
+genres.create({title: "rock"});
+genres.create({title: "hip-hop"});
+genres.create({title: "r&b"});
+genres.create({title: "country"});
 
 module.exports = router;
