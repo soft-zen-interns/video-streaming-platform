@@ -92,4 +92,15 @@ router.get('/create-genre/:genreName', function (req, res) {
     });
 });
 
+{/*<<<<<<< HEAD*/}
+{/*=======*/}
+{/*// hardcoded genres for testing*/}
+{/*genres.create({title: "pop"});*/}
+{/*genres.create({title: "rock"});*/}
+{/*genres.create({title: "hip-hop"});*/}
+{/*genres.create({title: "r&b"});*/}
+{/*genres.create({title: "country"});*/}
+{/*genres.create({title: "edm"});*/}
+
+{/*>>>>>>> origin/genres-section*/}
 module.exports = router;

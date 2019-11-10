@@ -23,7 +23,7 @@ class GenresSection extends React.Component {
 				<Row>
 					<Col></Col>
 					<Col md="auto" className="genres-section">
-						<h1 className="head-text">BROWSE GENRES</h1>
+						<p className="head-text">BROWSE GENRES</p>
 						<GenreRow  genres={this.state.genres}/>	
 					</Col>
 					<Col></Col>

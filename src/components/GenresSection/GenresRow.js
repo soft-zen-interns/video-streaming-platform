@@ -8,7 +8,7 @@ function GenreRow(props) {
       <Row>
         {props.genres.map((genre) => (
           <Col className="genre-box">
-			      {genre.genre.toUpperCase()}
+			      <p>{genre.title.toUpperCase()}</p>
 		      </Col>
         ))}
       </Row>
