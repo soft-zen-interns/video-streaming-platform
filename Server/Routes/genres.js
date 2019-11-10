@@ -81,5 +81,6 @@ genres.create({title: "rock"});
 genres.create({title: "hip-hop"});
 genres.create({title: "r&b"});
 genres.create({title: "country"});
+genres.create({title: "edm"});
 
 module.exports = router;

@@ -2,15 +2,28 @@
 	background-color: #221F30;
 	color: white;
 	margin: 2% 0;
+	padding: 25px 50px 50px 50px;
 }
 
 .genre-box {
-	width: 90px;
-	height: 90px;
+	width: 93px;
+	height: 93px;
 	background-color: #6A6A6A;
-	margin: 10px 10px;
+	margin: 5px 6px;
+	background-image: url("../../imgs/alter-image-genre-btn.png");
+	background-position: center;
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+}
+
+.genre-box > p {
+	font-size: x-small;	
+	text-align: center;
+	
 }
 
 .head-text {
 	text-align: center;
+	font-size: medium;
+	font-style: normal;
 }
