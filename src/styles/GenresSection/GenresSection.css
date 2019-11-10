@@ -2,7 +2,7 @@
 	background-color: #221F30;
 	color: white;
 	margin: 2% 0;
-	padding: 25px 50px 50px 50px;
+	padding: 25px 70px 60px 70px;
 }
 
 .genre-box {
@@ -14,12 +14,18 @@
 	background-position: center;
 	background-size: 30px 30px;
 	background-repeat: no-repeat;
+	border: none;
+	border-radius: 0;
+}
+
+.genre-box:hover {
+	filter: opacity(60%);
 }
 
 .genre-box > p {
-	font-size: x-small;	
+	font-size: xx-small;	
 	text-align: center;
-	
+	margin-top: 65px;
 }
 
 .head-text {
