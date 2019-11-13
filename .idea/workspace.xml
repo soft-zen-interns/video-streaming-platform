@@ -3,7 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="2728732a-9dfe-408e-a0fd-12cd21376048" name="Default Changelist" comment="/genres inserts initial genre titles in the db">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Routes/genres.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Routes/genres.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/DatabaseConfig/config/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/DatabaseConfig/config/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/DatabaseConfig/migrations/20191108132636-create-genres.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/DatabaseConfig/migrations/20191108132636-create-genres.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/DatabaseConfig/models/accounts.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/DatabaseConfig/models/accounts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/DatabaseConfig/models/genres.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/DatabaseConfig/models/genres.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/DatabaseConfig/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/DatabaseConfig/models/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Routes/genres.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/Routes/genres.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,6 +19,33 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="video-streaming-platform" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/Routes/profiles.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -25,9 +58,45 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/server/server.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1184" />
+    <option name="height" value="1129" />
+  </component>
   <component name="ProjectId" id="1R6FwKZLrn5z7Ux3GbYLvVso23C" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="video-streaming-platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="video-streaming-platform" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="video-streaming-platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="video-streaming-platform" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
@@ -132,6 +201,7 @@
       <workItem from="1572001770121" duration="1097000" />
       <workItem from="1573305992624" duration="12669000" />
       <workItem from="1573406921992" duration="5129000" />
+      <workItem from="1573634551503" duration="930000" />
     </task>
     <task id="LOCAL-00001" summary="Add genre from URL">
       <created>1573331493127</created>
@@ -178,6 +248,33 @@
     <option name="localTasksCounter" value="7" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="930000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1184" height="1129" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="npm" side_tool="true" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24935512" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3297975" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -187,6 +284,12 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -216,5 +319,24 @@
     <MESSAGE value="/genres inserts initial genres in the database" />
     <MESSAGE value="/genres inserts initial genre titles in the db" />
     <option name="LAST_COMMIT_MESSAGE" value="/genres inserts initial genre titles in the db" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/server/Routes/profiles.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
