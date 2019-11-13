@@ -24,7 +24,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "server": "nodemon Server/server.js",
-    "dbMigrate": "cd Server/DatabaseConfig && sequelize db:migrate"
+    "dbMigrate": "cd Server/DatabaseConfig && sequelize db:migrate",
+    "all": "npm run server & npm start"
   },
   "eslintConfig": {
     "extends": "react-app"
