@@ -56,7 +56,22 @@ router.post('/new-profile', function (req,res){
             }
         })
     })
+});
 
+router.get('/all-profiles', function (req,res) {
+
+    connection.getConnection(function (err, connection) {
+        connection.query("SELECT * FROM profiles ORDER BY id ASC", function (err, result) {
+            if (err) {
+                res.send(err.message);
+                console.log("Database error!");
+            }
+            else {
+                console.log(result);
+                res.send(result);
+            }
+        });
+    });
 });
 
 router.get('/',(req,res) => {
