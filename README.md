@@ -36,6 +36,14 @@ All custom server scripts will be listed here:
 This command will start the server locally on port 8000. 
 [http://localhost:8000](http://localhost:8000)
 
+### `npm run all`
+This command will start the server locally on port 8000 and will start the client side on port 3000. 
+
+[http://localhost:8000](http://localhost:8000)
+
+[http://localhost:3000](http://localhost:3000)
+
+
 
 ### `npm run dbMigrate`
 This command will migrate the available MySQL tables on your local MySQL server in database 'softzen'.
