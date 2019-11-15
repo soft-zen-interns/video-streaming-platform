@@ -3,6 +3,7 @@ const mysql = require('mysql');
 const Sequelize = require('sequelize');
 var bodyParser = require('body-parser');
 var jwt = require('jsonwebtoken');
+var jwt_decode = require('jwt-decode');
 
 router.use(bodyParser.urlencoded({ extended: true }));
 
@@ -31,7 +32,7 @@ const profiles = sequelize.define('profiles', {
 });
 
 router.post('/new-profile', function (req,res){
-    console.log(req.body);
+    //console.log(req.body);
     var username = req.body.username;
     var about = req.body.about;
     var website = req.body.website;
@@ -39,8 +40,6 @@ router.post('/new-profile', function (req,res){
     var payload =
         {
             username: username,
-            about: about,
-            website: website,
             password: password
         };
 
@@ -75,17 +74,57 @@ router.post('/new-profile', function (req,res){
                     }).then(function (profiles) {
                         if (profiles) {
                             res.send("Profile record was created -> JSON: " + JSON.stringify(profiles));
+                            console.log("Profile record was created -> JSON: " + JSON.stringify(profiles));
                         } else {
                             res.status(400).send('Error in insert new record');
+                            console.log('Error in insert new record');
                         }
                     })
                 }
-                else
+                else {
                     res.status(400).send('No password!');
+                    console.log('No password!');
+                }
             }
         })
     })
 });
+
+router.post('/login', (req,res) => {
+    //console.log(req.body);
+    var username = req.body.username;
+    var password = req.body.password;
+    var payload =
+        {
+            username: username,
+            password: password
+        };
+
+    connection.getConnection(function (err, connection) {
+        connection.query("Select (token) from profiles where username = '" + username + "'", function (err, result) {
+            if (err) {
+                console.log("Database error");
+            } else if (result.toString() === "") {
+                console.log("-> " + username + " does not exist.");
+                res.send("-> " + username + " does not exist.");
+            } else {
+                var token = result[0].token.toString();
+
+                var decoded = jwt_decode(token);
+
+                if (password === decoded.password) {
+                    res.send("logged in");
+                    console.log("logged in");
+                }else{
+                    res.send("wrong password");
+                    console.log("wrong password");
+                }
+            }
+        })
+    })
+});
+
+
 
 router.get('/all-profiles', function (req,res) {
 
