@@ -2,6 +2,7 @@ const router = require('express').Router();
 const mysql = require('mysql');
 const Sequelize = require('sequelize');
 var bodyParser = require('body-parser');
+var jwt = require('jsonwebtoken');
 
 router.use(bodyParser.urlencoded({ extended: true }));
 
@@ -25,7 +26,8 @@ const profiles = sequelize.define('profiles', {
     },
     username: Sequelize.STRING,
     website: Sequelize.STRING,
-    about: Sequelize.STRING
+    about: Sequelize.STRING,
+    token: Sequelize.STRING
 });
 
 router.post('/new-profile', function (req,res){
@@ -33,6 +35,14 @@ router.post('/new-profile', function (req,res){
     var username = req.body.username;
     var about = req.body.about;
     var website = req.body.website;
+    var password = req.body.password;
+    var payload =
+        {
+            username: username,
+            about: about,
+            website: website,
+            password: password
+        };
 
     connection.getConnection(function (err, connection) {
         connection.query("Select (username) from profiles where username = '" + username + "'", function (err, result) {
@@ -42,17 +52,36 @@ router.post('/new-profile', function (req,res){
                 console.log("-> " + username + " already exists.");
                 res.send("-> " + username + " already exists.");
             } else {
-                return profiles.create({
-                    username: username,
-                    website: website,
-                    about: about
-                }).then(function (profiles) {
-                    if (profiles) {
-                        res.send("Profile record was created -> JSON: " +  JSON.stringify(profiles));
-                    } else {
-                        res.status(400).send('Error in insert new record');
-                    }
-                })
+                //
+                if (password != null) {
+                    let token = jwt.sign(payload, "secret_key", {algorithm: 'HS256'});
+
+                    // jwt.verify(token, server_key, { algorithm: "HS256" }, (err, payload) => {
+                    //     if (err) {
+                    //         res.send('Access deny!');
+                    //     }
+                    //     else {
+                    //         var payload_str = JSON.stringify(payload);
+                    //         res.send("Access granted!  Payload: " + payload_str + "  Token: " + token);
+                    //     }
+                    // });
+                    //
+                    //
+                    return profiles.create({
+                        username: username,
+                        website: website,
+                        about: about,
+                        token: token
+                    }).then(function (profiles) {
+                        if (profiles) {
+                            res.send("Profile record was created -> JSON: " + JSON.stringify(profiles));
+                        } else {
+                            res.status(400).send('Error in insert new record');
+                        }
+                    })
+                }
+                else
+                    res.status(400).send('No password!');
             }
         })
     })
